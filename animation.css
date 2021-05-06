@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.main-animation, .container {
+  animation: screen_transaction ease-in 1s;
+}
+
+.header-animation{
+  animation: header_transaction 2s 1s;
+  -webkit-animation: header_transaction 2s;
+}
+
+@keyframes header_transaction {
+  0% {
+    opacity: 0;
+    margin-top: 5%
+  }
+  100%; {
+    opacity: 1;
+    margin-top: 0%
+  }
+}
+
+@keyframes screen_transaction {
+  0% {
+    opacity: 0;
+  }
+  100%; {
+    opacity: 1;
+  }
+}
+
+.icon-hover {
+  display: inline-block;
+  color: rgb(51, 51, 51);
+  transition: all ease 0.5s
+}
+
+.icon-hover:hover {
+  color: #85FFF5;
+  transform: translate(0, -1vmin);
+}
+.tooltip-content{
+  visibility: hidden;
+}
+
+.tooltip:hover .tooltip-content {
+  visibility: visible;
+}
+
+.spin-circle {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {transform: rotate(360deg);}
+}
