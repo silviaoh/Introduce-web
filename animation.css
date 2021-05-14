@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-.main-animation, .container {
+.fade {
   animation: screen_transaction ease-in 1s;
 }
 
-.header-animation{
+.fade{
   animation: header_transaction 2s 1s;
   -webkit-animation: header_transaction 2s;
 }
@@ -29,6 +29,13 @@
   }
 }
 
+nav ul li a{
+  transition: all ease 0.5s
+}
+nav ul li a:hover {
+  color: #155FCF;
+}
+
 .icon-hover {
   display: inline-block;
   color: rgb(51, 51, 51);
@@ -36,8 +43,7 @@
 }
 
 .icon-hover:hover {
-  color: #85FFF5;
-  transform: translate(0, -1vmin);
+  color: #8EE3C8;
 }
 .tooltip-content{
   visibility: hidden;
