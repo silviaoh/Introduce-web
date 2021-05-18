@@ -457,7 +457,7 @@ input[type="text"]:focus, textarea:focus {
 
   /*bg*/
   .bg {min-height: 700px;}
-  .bg h1 {font-size: 3.8em; padding-top: 45px;}
+  .bg h1 {font-size: 3em; text-align: center;}
   /*chapter*/
   .chapter {
     display:flex;
@@ -479,7 +479,15 @@ input[type="text"]:focus, textarea:focus {
     margin-top: 30px;
   }
 
-  .info h2 {padding-bottom: 0; line-height: 36px;}
+  .chapter .arrow-link .info h2 {
+    padding-bottom: 0;
+    line-height: 36px;
+    font-size: 1.5em;
+    
+  }
+  .chapter .arrow-link .info p {
+    font-size: 0.9em;
+  }
 
   .chapter .arrow-link {
     width: 100%;
