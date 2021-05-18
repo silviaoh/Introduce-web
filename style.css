@@ -494,17 +494,14 @@ input[type="text"]:focus, textarea:focus {
   .chapter .arrow-link .info p {
     font-size: 0.9em;
   }
-  @media screen and (max-width:400px) {
-    .chapter .arrow-link {
-      width: 20%;
-    }
-  }
 
   .chapter .arrow-link {
     width: 100%;
   }
+}
 
-
-
-
+@media screen and (max-width:400px) {
+  .chapter .arrow-link {
+    width: 30%;
+  }
 }
