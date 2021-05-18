@@ -420,13 +420,13 @@ input[type="text"]:focus, textarea:focus {
   border-bottom: 1px solid #8EE3C8;
 }
 
-@media screen and (max-width:768px) {
+@media only screen and (max-width: 600px) {
    .main-container {
       grid-template-areas:
         "header"
         "  bg  "
         "chapter";
-      grid-auto-columns: minmax(320px, auto);
+      grid-template-columns: minmax(320px, auto);
       grid-auto-rows: 85px 100vh 1fr;
       height: auto;
   }
@@ -456,8 +456,8 @@ input[type="text"]:focus, textarea:focus {
   .main-icon p {margin: 0 0 0 5px;}
 
   /*bg*/
-  .bg {min-height: 800px;}
-  .bg h1 {font-size: 4em;}
+  .bg {min-height: 700px;}
+  .bg h1 {font-size: 3.8em; padding-top: 45px;}
   /*chapter*/
   .chapter {
     display:flex;
@@ -465,7 +465,7 @@ input[type="text"]:focus, textarea:focus {
     padding:0 55px 100px;
     grid-row: 2;
     background: transparent;
-    min-height: 800px;
+    min-height: 700px;
   }
   .chapter-content {
     grid-template-rows: 85px 85px 85px;
