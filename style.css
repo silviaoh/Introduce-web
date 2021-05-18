@@ -420,7 +420,7 @@ input[type="text"]:focus, textarea:focus {
   border-bottom: 1px solid #8EE3C8;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
    .main-container {
       grid-template-areas:
         "header"
