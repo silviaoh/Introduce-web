@@ -456,8 +456,14 @@ input[type="text"]:focus, textarea:focus {
   .main-icon p {margin: 0 0 0 5px;}
 
   /*bg*/
-  .bg {min-height: 700px;}
-  .bg h1 {font-size: 3em; text-align: center;}
+  .bg {
+    min-height: 700px;
+    min-width: 320px;
+  }
+  .bg h1 {
+    font-size: 3em;
+    text-align: center;
+  }
   /*chapter*/
   .chapter {
     display:flex;
@@ -483,15 +489,22 @@ input[type="text"]:focus, textarea:focus {
     padding-bottom: 0;
     line-height: 36px;
     font-size: 1.5em;
-    
+
   }
   .chapter .arrow-link .info p {
     font-size: 0.9em;
   }
+  @media screen and (min-width:600px) {}
+    .chapter .arrow-link {
+      width: 100%;
+    }
+  }
 
   .chapter .arrow-link {
-    width: 100%;
+    width: 30%;
   }
+
+
 
 
 }
