@@ -1,13 +1,17 @@
 @charset "UTF-8";
-@import "font.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 html, body {
-  font-family: 'S-CoreDream-3Light', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'yg-jalnan', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   cursor: default;
 }
+
+h1 {font-weight: 900;}
+h2 {font-weight: 700;}
 
 body, div, span,
 h1, h2, h3, h4, h5, h6,
