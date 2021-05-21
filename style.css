@@ -95,34 +95,31 @@ footer .footer-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: larger;
 }
 .main-h h1 {
   display:inline;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight:400;
 }
 
 .bg {
   grid-area: bg;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./img/sample.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./img/fantasy.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-width: 500px;
+  min-width: 720px;
 }
 
 .bg h1 {
-  font-size: 4.5em;
+  font-size: 3.5em;
   text-align: center;
   padding-top: 20%;
   letter-spacing: 3px;
-  color: transparent;
-  background-image: url('./img/sample.jpg');
-  background-repeat: no-repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-position: center 18.5%;
+  color: #fff;
 }
 .chapter {
   background: #D7EAFF;
@@ -313,14 +310,14 @@ footer .footer-info {
   padding: 50px 0;
 }
 
-.projects-header h1, .contact-wrapper h1 {font-size: 4em;}
-.projects-header p {font-size: 15px; padding-top: 20px;}
+.projects-header h1, .contact-wrapper h1 {font-size: 3em;}
+.projects-header p {padding-top: 20px;}
 
 .box-wrapper {margin-bottom: 50px;}
 .box {
   width: 805px;
   height: 380px;
-  margin: 50px 0;
+  margin: 0px 0 50px 0;
   background: #ffffff;
   box-shadow: -5px 5px 30px #A7BCC7;
   display: flex;
@@ -349,14 +346,14 @@ footer .footer-info {
 .title span {
   background-color: rgb(51, 51, 51);
   color: #fff;
-  font-size: 0.9em;
-  font-weight: 500;
+  font-size: 0.8em;
+  font-weight: 400;
   padding: 5px;
   border-radius: 10px;
 }
 
 .box-content p {
-  margin: 0 40px 40px 40px;
+  margin: 30px;
 }
 
 .box img {
@@ -399,7 +396,8 @@ input[type="text"], textarea {
   padding: .7em .4em;
   border: 0;
   border-bottom: 1px solid #000;
-  font-size: 15px;
+  font-size: 1em;
+  font-weight: 300;
   resize: none;
 }
 
@@ -505,7 +503,7 @@ input[type="text"]:focus, textarea:focus {
     grid-template-areas:
       "mh2 mhcon";
     grid-template-rows: 70px;
-    grid-auto-columns: minmax(70px, auto);
+    grid-auto-columns: minmax(55px, auto);
     align-items: center;
     justify-items: start;
     padding: 10px 20px;
@@ -515,14 +513,14 @@ input[type="text"]:focus, textarea:focus {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    grid-area: mhcon
+    grid-area: mhcon;
+    font-size: medium;
   }
 
   .main-h h1 {
     grid-area: mh2;
-    font-size: 1.5em;
   }
-  .main-icon p, .main-h h2 {
+  .main-h h1 {
     writing-mode: horizontal-tb;
     transform: rotate(0);
   }
@@ -565,7 +563,7 @@ input[type="text"]:focus, textarea:focus {
     padding-bottom: 0;
     line-height: 36px;
     font-size: 1.2em;
-
+    font-weight: 400;
   }
   .chapter .arrow-link .info p {
     font-size: 0.8em;
@@ -596,7 +594,7 @@ input[type="text"]:focus, textarea:focus {
     box-shadow: -10px -5px 20px rgb(203,204,204);
   }
 
-  .about-info h1, .about-info h2 {font-size: 2.5em; font-weight: 800;}
+  .about-info h1, .about-info h2 {font-size: 2em;}
 
   /* project */
   .projects-wrapper, .contact-wrapper {
@@ -605,12 +603,15 @@ input[type="text"]:focus, textarea:focus {
   .projects-header {padding-bottom: 0;}
   .projects-header h1 {font-size: 2em;}
 
+  .box-wrapper {margin-top: 50px;}
+
   .box {
     display: flex;
     width: 300px;
     height: auto;
     flex-direction: column;
   }
+
 
   .box-content {
     width: 300px;
