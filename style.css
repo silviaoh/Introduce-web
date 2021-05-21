@@ -81,7 +81,6 @@ footer .footer-info {
 }
 
 .main-h {
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(350px, auto);
@@ -97,11 +96,11 @@ footer .footer-info {
   flex-direction: column;
   align-items: center;
 }
-.main-icon p{margin-top: 10px;}
-.main-icon p, .main-h h2 {
+.main-h h1 {
   display:inline;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
+  font-size: 1.2em;
 }
 
 .bg {
@@ -479,9 +478,7 @@ input[type="text"]:focus, textarea:focus {
   .link-icon {
     width: 100%;
   }
-  nav {
 
-  }
   nav .menu-bar {
     position: static;
     visibility: visible;
