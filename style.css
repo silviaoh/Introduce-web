@@ -723,7 +723,7 @@ textarea:focus {
   #contact-form {
     width: 300px;
     height: 400px;
-    padding: 3px;
+    padding: 20px;
   }
   input[type="text"] {
     font-size: 0.8em;
